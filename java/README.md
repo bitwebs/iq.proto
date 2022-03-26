@@ -1,5 +1,5 @@
-# terra.proto (Java and Kotlin)
-[![Maven Central](https://img.shields.io/maven-central/v/money.terra/proto-java)](https://mvnrepository.com/artifact/money.terra/proto-java)
+# iq.proto (Java and Kotlin)
+[![Maven Central](https://img.shields.io/maven-central/v/money.iq/proto-java)](https://mvnrepository.com/artifact/money.iq/proto-java)
 
 ## How to use
 ### Gradle
@@ -12,10 +12,10 @@ repositories {
 }
 
 dependencies {
-    implementation("money.terra:proto-java:$terraCoreVersion")
-    implementation("money.terra:proto-kotlin:$terraCoreVersion")
-    implementation("money.terra:grpc-java:$terraCoreVersion")
-    implementation("money.terra:grpc-kotlin:$terraCoreVersion")
+    implementation("money.iq:proto-java:$iqCoreVersion")
+    implementation("money.iq:proto-kotlin:$iqCoreVersion")
+    implementation("money.iq:grpc-java:$iqCoreVersion")
+    implementation("money.iq:grpc-kotlin:$iqCoreVersion")
     implementation("io.grpc:grpc-okhttp:1.40.1")
 }
 ```

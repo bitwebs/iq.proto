@@ -1,4 +1,4 @@
-package terra.market.v1beta1;
+package iq.market.v1beta1;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
@@ -9,38 +9,38 @@ import static io.grpc.MethodDescriptor.generateFullMethodName;
  */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 1.40.1)",
-    comments = "Source: terra/market/v1beta1/query.proto")
+    comments = "Source: iq/market/v1beta1/query.proto")
 @io.grpc.stub.annotations.GrpcGenerated
 public final class QueryGrpc {
 
   private QueryGrpc() {}
 
-  public static final String SERVICE_NAME = "terra.market.v1beta1.Query";
+  public static final String SERVICE_NAME = "iq.market.v1beta1.Query";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<terra.market.v1beta1.QueryOuterClass.QuerySwapRequest,
-      terra.market.v1beta1.QueryOuterClass.QuerySwapResponse> getSwapMethod;
+  private static volatile io.grpc.MethodDescriptor<iq.market.v1beta1.QueryOuterClass.QuerySwapRequest,
+      iq.market.v1beta1.QueryOuterClass.QuerySwapResponse> getSwapMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Swap",
-      requestType = terra.market.v1beta1.QueryOuterClass.QuerySwapRequest.class,
-      responseType = terra.market.v1beta1.QueryOuterClass.QuerySwapResponse.class,
+      requestType = iq.market.v1beta1.QueryOuterClass.QuerySwapRequest.class,
+      responseType = iq.market.v1beta1.QueryOuterClass.QuerySwapResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.market.v1beta1.QueryOuterClass.QuerySwapRequest,
-      terra.market.v1beta1.QueryOuterClass.QuerySwapResponse> getSwapMethod() {
-    io.grpc.MethodDescriptor<terra.market.v1beta1.QueryOuterClass.QuerySwapRequest, terra.market.v1beta1.QueryOuterClass.QuerySwapResponse> getSwapMethod;
+  public static io.grpc.MethodDescriptor<iq.market.v1beta1.QueryOuterClass.QuerySwapRequest,
+      iq.market.v1beta1.QueryOuterClass.QuerySwapResponse> getSwapMethod() {
+    io.grpc.MethodDescriptor<iq.market.v1beta1.QueryOuterClass.QuerySwapRequest, iq.market.v1beta1.QueryOuterClass.QuerySwapResponse> getSwapMethod;
     if ((getSwapMethod = QueryGrpc.getSwapMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getSwapMethod = QueryGrpc.getSwapMethod) == null) {
           QueryGrpc.getSwapMethod = getSwapMethod =
-              io.grpc.MethodDescriptor.<terra.market.v1beta1.QueryOuterClass.QuerySwapRequest, terra.market.v1beta1.QueryOuterClass.QuerySwapResponse>newBuilder()
+              io.grpc.MethodDescriptor.<iq.market.v1beta1.QueryOuterClass.QuerySwapRequest, iq.market.v1beta1.QueryOuterClass.QuerySwapResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Swap"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.market.v1beta1.QueryOuterClass.QuerySwapRequest.getDefaultInstance()))
+                  iq.market.v1beta1.QueryOuterClass.QuerySwapRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.market.v1beta1.QueryOuterClass.QuerySwapResponse.getDefaultInstance()))
+                  iq.market.v1beta1.QueryOuterClass.QuerySwapResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("Swap"))
               .build();
         }
@@ -49,60 +49,60 @@ public final class QueryGrpc {
     return getSwapMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaRequest,
-      terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaResponse> getTerraPoolDeltaMethod;
+  private static volatile io.grpc.MethodDescriptor<iq.market.v1beta1.QueryOuterClass.QueryIqPoolDeltaRequest,
+      iq.market.v1beta1.QueryOuterClass.QueryIqPoolDeltaResponse> getIqPoolDeltaMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "TerraPoolDelta",
-      requestType = terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaRequest.class,
-      responseType = terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaResponse.class,
+      fullMethodName = SERVICE_NAME + '/' + "IqPoolDelta",
+      requestType = iq.market.v1beta1.QueryOuterClass.QueryIqPoolDeltaRequest.class,
+      responseType = iq.market.v1beta1.QueryOuterClass.QueryIqPoolDeltaResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaRequest,
-      terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaResponse> getTerraPoolDeltaMethod() {
-    io.grpc.MethodDescriptor<terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaRequest, terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaResponse> getTerraPoolDeltaMethod;
-    if ((getTerraPoolDeltaMethod = QueryGrpc.getTerraPoolDeltaMethod) == null) {
+  public static io.grpc.MethodDescriptor<iq.market.v1beta1.QueryOuterClass.QueryIqPoolDeltaRequest,
+      iq.market.v1beta1.QueryOuterClass.QueryIqPoolDeltaResponse> getIqPoolDeltaMethod() {
+    io.grpc.MethodDescriptor<iq.market.v1beta1.QueryOuterClass.QueryIqPoolDeltaRequest, iq.market.v1beta1.QueryOuterClass.QueryIqPoolDeltaResponse> getIqPoolDeltaMethod;
+    if ((getIqPoolDeltaMethod = QueryGrpc.getIqPoolDeltaMethod) == null) {
       synchronized (QueryGrpc.class) {
-        if ((getTerraPoolDeltaMethod = QueryGrpc.getTerraPoolDeltaMethod) == null) {
-          QueryGrpc.getTerraPoolDeltaMethod = getTerraPoolDeltaMethod =
-              io.grpc.MethodDescriptor.<terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaRequest, terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaResponse>newBuilder()
+        if ((getIqPoolDeltaMethod = QueryGrpc.getIqPoolDeltaMethod) == null) {
+          QueryGrpc.getIqPoolDeltaMethod = getIqPoolDeltaMethod =
+              io.grpc.MethodDescriptor.<iq.market.v1beta1.QueryOuterClass.QueryIqPoolDeltaRequest, iq.market.v1beta1.QueryOuterClass.QueryIqPoolDeltaResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "TerraPoolDelta"))
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "IqPoolDelta"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaRequest.getDefaultInstance()))
+                  iq.market.v1beta1.QueryOuterClass.QueryIqPoolDeltaRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaResponse.getDefaultInstance()))
-              .setSchemaDescriptor(new QueryMethodDescriptorSupplier("TerraPoolDelta"))
+                  iq.market.v1beta1.QueryOuterClass.QueryIqPoolDeltaResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new QueryMethodDescriptorSupplier("IqPoolDelta"))
               .build();
         }
       }
     }
-    return getTerraPoolDeltaMethod;
+    return getIqPoolDeltaMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.market.v1beta1.QueryOuterClass.QueryParamsRequest,
-      terra.market.v1beta1.QueryOuterClass.QueryParamsResponse> getParamsMethod;
+  private static volatile io.grpc.MethodDescriptor<iq.market.v1beta1.QueryOuterClass.QueryParamsRequest,
+      iq.market.v1beta1.QueryOuterClass.QueryParamsResponse> getParamsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Params",
-      requestType = terra.market.v1beta1.QueryOuterClass.QueryParamsRequest.class,
-      responseType = terra.market.v1beta1.QueryOuterClass.QueryParamsResponse.class,
+      requestType = iq.market.v1beta1.QueryOuterClass.QueryParamsRequest.class,
+      responseType = iq.market.v1beta1.QueryOuterClass.QueryParamsResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.market.v1beta1.QueryOuterClass.QueryParamsRequest,
-      terra.market.v1beta1.QueryOuterClass.QueryParamsResponse> getParamsMethod() {
-    io.grpc.MethodDescriptor<terra.market.v1beta1.QueryOuterClass.QueryParamsRequest, terra.market.v1beta1.QueryOuterClass.QueryParamsResponse> getParamsMethod;
+  public static io.grpc.MethodDescriptor<iq.market.v1beta1.QueryOuterClass.QueryParamsRequest,
+      iq.market.v1beta1.QueryOuterClass.QueryParamsResponse> getParamsMethod() {
+    io.grpc.MethodDescriptor<iq.market.v1beta1.QueryOuterClass.QueryParamsRequest, iq.market.v1beta1.QueryOuterClass.QueryParamsResponse> getParamsMethod;
     if ((getParamsMethod = QueryGrpc.getParamsMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getParamsMethod = QueryGrpc.getParamsMethod) == null) {
           QueryGrpc.getParamsMethod = getParamsMethod =
-              io.grpc.MethodDescriptor.<terra.market.v1beta1.QueryOuterClass.QueryParamsRequest, terra.market.v1beta1.QueryOuterClass.QueryParamsResponse>newBuilder()
+              io.grpc.MethodDescriptor.<iq.market.v1beta1.QueryOuterClass.QueryParamsRequest, iq.market.v1beta1.QueryOuterClass.QueryParamsResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Params"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.market.v1beta1.QueryOuterClass.QueryParamsRequest.getDefaultInstance()))
+                  iq.market.v1beta1.QueryOuterClass.QueryParamsRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.market.v1beta1.QueryOuterClass.QueryParamsResponse.getDefaultInstance()))
+                  iq.market.v1beta1.QueryOuterClass.QueryParamsResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("Params"))
               .build();
         }
@@ -167,19 +167,19 @@ public final class QueryGrpc {
      * Swap returns simulated swap amount.
      * </pre>
      */
-    public void swap(terra.market.v1beta1.QueryOuterClass.QuerySwapRequest request,
-        io.grpc.stub.StreamObserver<terra.market.v1beta1.QueryOuterClass.QuerySwapResponse> responseObserver) {
+    public void swap(iq.market.v1beta1.QueryOuterClass.QuerySwapRequest request,
+        io.grpc.stub.StreamObserver<iq.market.v1beta1.QueryOuterClass.QuerySwapResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getSwapMethod(), responseObserver);
     }
 
     /**
      * <pre>
-     * TerraPoolDelta returns terra_pool_delta amount.
+     * IqPoolDelta returns iq_pool_delta amount.
      * </pre>
      */
-    public void terraPoolDelta(terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaRequest request,
-        io.grpc.stub.StreamObserver<terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaResponse> responseObserver) {
-      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getTerraPoolDeltaMethod(), responseObserver);
+    public void iqPoolDelta(iq.market.v1beta1.QueryOuterClass.QueryIqPoolDeltaRequest request,
+        io.grpc.stub.StreamObserver<iq.market.v1beta1.QueryOuterClass.QueryIqPoolDeltaResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getIqPoolDeltaMethod(), responseObserver);
     }
 
     /**
@@ -187,8 +187,8 @@ public final class QueryGrpc {
      * Params queries all parameters.
      * </pre>
      */
-    public void params(terra.market.v1beta1.QueryOuterClass.QueryParamsRequest request,
-        io.grpc.stub.StreamObserver<terra.market.v1beta1.QueryOuterClass.QueryParamsResponse> responseObserver) {
+    public void params(iq.market.v1beta1.QueryOuterClass.QueryParamsRequest request,
+        io.grpc.stub.StreamObserver<iq.market.v1beta1.QueryOuterClass.QueryParamsResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getParamsMethod(), responseObserver);
     }
 
@@ -198,22 +198,22 @@ public final class QueryGrpc {
             getSwapMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.market.v1beta1.QueryOuterClass.QuerySwapRequest,
-                terra.market.v1beta1.QueryOuterClass.QuerySwapResponse>(
+                iq.market.v1beta1.QueryOuterClass.QuerySwapRequest,
+                iq.market.v1beta1.QueryOuterClass.QuerySwapResponse>(
                   this, METHODID_SWAP)))
           .addMethod(
-            getTerraPoolDeltaMethod(),
+            getIqPoolDeltaMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaRequest,
-                terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaResponse>(
-                  this, METHODID_TERRA_POOL_DELTA)))
+                iq.market.v1beta1.QueryOuterClass.QueryIqPoolDeltaRequest,
+                iq.market.v1beta1.QueryOuterClass.QueryIqPoolDeltaResponse>(
+                  this, METHODID_IQ_POOL_DELTA)))
           .addMethod(
             getParamsMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.market.v1beta1.QueryOuterClass.QueryParamsRequest,
-                terra.market.v1beta1.QueryOuterClass.QueryParamsResponse>(
+                iq.market.v1beta1.QueryOuterClass.QueryParamsRequest,
+                iq.market.v1beta1.QueryOuterClass.QueryParamsResponse>(
                   this, METHODID_PARAMS)))
           .build();
     }
@@ -241,21 +241,21 @@ public final class QueryGrpc {
      * Swap returns simulated swap amount.
      * </pre>
      */
-    public void swap(terra.market.v1beta1.QueryOuterClass.QuerySwapRequest request,
-        io.grpc.stub.StreamObserver<terra.market.v1beta1.QueryOuterClass.QuerySwapResponse> responseObserver) {
+    public void swap(iq.market.v1beta1.QueryOuterClass.QuerySwapRequest request,
+        io.grpc.stub.StreamObserver<iq.market.v1beta1.QueryOuterClass.QuerySwapResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getSwapMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      * <pre>
-     * TerraPoolDelta returns terra_pool_delta amount.
+     * IqPoolDelta returns iq_pool_delta amount.
      * </pre>
      */
-    public void terraPoolDelta(terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaRequest request,
-        io.grpc.stub.StreamObserver<terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaResponse> responseObserver) {
+    public void iqPoolDelta(iq.market.v1beta1.QueryOuterClass.QueryIqPoolDeltaRequest request,
+        io.grpc.stub.StreamObserver<iq.market.v1beta1.QueryOuterClass.QueryIqPoolDeltaResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
-          getChannel().newCall(getTerraPoolDeltaMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getIqPoolDeltaMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
@@ -263,8 +263,8 @@ public final class QueryGrpc {
      * Params queries all parameters.
      * </pre>
      */
-    public void params(terra.market.v1beta1.QueryOuterClass.QueryParamsRequest request,
-        io.grpc.stub.StreamObserver<terra.market.v1beta1.QueryOuterClass.QueryParamsResponse> responseObserver) {
+    public void params(iq.market.v1beta1.QueryOuterClass.QueryParamsRequest request,
+        io.grpc.stub.StreamObserver<iq.market.v1beta1.QueryOuterClass.QueryParamsResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getParamsMethod(), getCallOptions()), request, responseObserver);
     }
@@ -292,19 +292,19 @@ public final class QueryGrpc {
      * Swap returns simulated swap amount.
      * </pre>
      */
-    public terra.market.v1beta1.QueryOuterClass.QuerySwapResponse swap(terra.market.v1beta1.QueryOuterClass.QuerySwapRequest request) {
+    public iq.market.v1beta1.QueryOuterClass.QuerySwapResponse swap(iq.market.v1beta1.QueryOuterClass.QuerySwapRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getSwapMethod(), getCallOptions(), request);
     }
 
     /**
      * <pre>
-     * TerraPoolDelta returns terra_pool_delta amount.
+     * IqPoolDelta returns iq_pool_delta amount.
      * </pre>
      */
-    public terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaResponse terraPoolDelta(terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaRequest request) {
+    public iq.market.v1beta1.QueryOuterClass.QueryIqPoolDeltaResponse iqPoolDelta(iq.market.v1beta1.QueryOuterClass.QueryIqPoolDeltaRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
-          getChannel(), getTerraPoolDeltaMethod(), getCallOptions(), request);
+          getChannel(), getIqPoolDeltaMethod(), getCallOptions(), request);
     }
 
     /**
@@ -312,7 +312,7 @@ public final class QueryGrpc {
      * Params queries all parameters.
      * </pre>
      */
-    public terra.market.v1beta1.QueryOuterClass.QueryParamsResponse params(terra.market.v1beta1.QueryOuterClass.QueryParamsRequest request) {
+    public iq.market.v1beta1.QueryOuterClass.QueryParamsResponse params(iq.market.v1beta1.QueryOuterClass.QueryParamsRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getParamsMethod(), getCallOptions(), request);
     }
@@ -340,21 +340,21 @@ public final class QueryGrpc {
      * Swap returns simulated swap amount.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.market.v1beta1.QueryOuterClass.QuerySwapResponse> swap(
-        terra.market.v1beta1.QueryOuterClass.QuerySwapRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<iq.market.v1beta1.QueryOuterClass.QuerySwapResponse> swap(
+        iq.market.v1beta1.QueryOuterClass.QuerySwapRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getSwapMethod(), getCallOptions()), request);
     }
 
     /**
      * <pre>
-     * TerraPoolDelta returns terra_pool_delta amount.
+     * IqPoolDelta returns iq_pool_delta amount.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaResponse> terraPoolDelta(
-        terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<iq.market.v1beta1.QueryOuterClass.QueryIqPoolDeltaResponse> iqPoolDelta(
+        iq.market.v1beta1.QueryOuterClass.QueryIqPoolDeltaRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
-          getChannel().newCall(getTerraPoolDeltaMethod(), getCallOptions()), request);
+          getChannel().newCall(getIqPoolDeltaMethod(), getCallOptions()), request);
     }
 
     /**
@@ -362,15 +362,15 @@ public final class QueryGrpc {
      * Params queries all parameters.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.market.v1beta1.QueryOuterClass.QueryParamsResponse> params(
-        terra.market.v1beta1.QueryOuterClass.QueryParamsRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<iq.market.v1beta1.QueryOuterClass.QueryParamsResponse> params(
+        iq.market.v1beta1.QueryOuterClass.QueryParamsRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getParamsMethod(), getCallOptions()), request);
     }
   }
 
   private static final int METHODID_SWAP = 0;
-  private static final int METHODID_TERRA_POOL_DELTA = 1;
+  private static final int METHODID_IQ_POOL_DELTA = 1;
   private static final int METHODID_PARAMS = 2;
 
   private static final class MethodHandlers<Req, Resp> implements
@@ -391,16 +391,16 @@ public final class QueryGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_SWAP:
-          serviceImpl.swap((terra.market.v1beta1.QueryOuterClass.QuerySwapRequest) request,
-              (io.grpc.stub.StreamObserver<terra.market.v1beta1.QueryOuterClass.QuerySwapResponse>) responseObserver);
+          serviceImpl.swap((iq.market.v1beta1.QueryOuterClass.QuerySwapRequest) request,
+              (io.grpc.stub.StreamObserver<iq.market.v1beta1.QueryOuterClass.QuerySwapResponse>) responseObserver);
           break;
-        case METHODID_TERRA_POOL_DELTA:
-          serviceImpl.terraPoolDelta((terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaRequest) request,
-              (io.grpc.stub.StreamObserver<terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaResponse>) responseObserver);
+        case METHODID_IQ_POOL_DELTA:
+          serviceImpl.iqPoolDelta((iq.market.v1beta1.QueryOuterClass.QueryIqPoolDeltaRequest) request,
+              (io.grpc.stub.StreamObserver<iq.market.v1beta1.QueryOuterClass.QueryIqPoolDeltaResponse>) responseObserver);
           break;
         case METHODID_PARAMS:
-          serviceImpl.params((terra.market.v1beta1.QueryOuterClass.QueryParamsRequest) request,
-              (io.grpc.stub.StreamObserver<terra.market.v1beta1.QueryOuterClass.QueryParamsResponse>) responseObserver);
+          serviceImpl.params((iq.market.v1beta1.QueryOuterClass.QueryParamsRequest) request,
+              (io.grpc.stub.StreamObserver<iq.market.v1beta1.QueryOuterClass.QueryParamsResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -424,7 +424,7 @@ public final class QueryGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return terra.market.v1beta1.QueryOuterClass.getDescriptor();
+      return iq.market.v1beta1.QueryOuterClass.getDescriptor();
     }
 
     @java.lang.Override
@@ -464,7 +464,7 @@ public final class QueryGrpc {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new QueryFileDescriptorSupplier())
               .addMethod(getSwapMethod())
-              .addMethod(getTerraPoolDeltaMethod())
+              .addMethod(getIqPoolDeltaMethod())
               .addMethod(getParamsMethod())
               .build();
         }

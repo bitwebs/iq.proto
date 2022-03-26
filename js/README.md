@@ -1,4 +1,4 @@
-# terra.proto
+# iq.proto
 
 ## Maintenance
 

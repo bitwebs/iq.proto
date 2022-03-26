@@ -16,7 +16,7 @@ allprojects {
         plugin("maven-publish")
     }
 
-    group = "money.terra"
+    group = "money.iq"
     version = "0.5.16"
 
     repositories {
@@ -30,8 +30,8 @@ allprojects {
     sourceSets {
         main {
             proto {
-                srcDir("${rootProject.rootDir.parent}/terrad/third_party/proto")
-                srcDir("${rootProject.rootDir.parent}/terrad/proto")
+                srcDir("${rootProject.rootDir.parent}/iqd/third_party/proto")
+                srcDir("${rootProject.rootDir.parent}/iqd/proto")
             }
         }
     }
@@ -64,8 +64,8 @@ allprojects {
 
                 pom {
                     name.set(project.name)
-                    description.set("Terra Core Protobuf Builds")
-                    url.set("https://github.com/terra-money/terra.proto")
+                    description.set("Iq Core Protobuf Builds")
+                    url.set("https://github.com/iq-money/iq.proto")
                     licenses {
                         license {
                             name.set("The Apache License, Version 2.0")
@@ -74,14 +74,14 @@ allprojects {
                     }
                     developers {
                         developer {
-                            id.set("terraformlabs")
-                            name.set("Terraform Labs Korea")
+                            id.set("iqformlabs")
+                            name.set("Iqform Labs Korea")
                         }
                     }
                     scm {
-                        connection.set("scm:git:git://github.com/terra-money/terra.proto.git")
-                        developerConnection.set("scm:git:git://github.com/terra-money/terra.proto.git")
-                        url.set("https://github.com/terra-money/terra.proto")
+                        connection.set("scm:git:git://github.com/iq-money/iq.proto.git")
+                        developerConnection.set("scm:git:git://github.com/iq-money/iq.proto.git")
+                        url.set("https://github.com/iq-money/iq.proto")
                     }
                 }
             }

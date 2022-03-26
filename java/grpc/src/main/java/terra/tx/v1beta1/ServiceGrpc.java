@@ -1,4 +1,4 @@
-package terra.tx.v1beta1;
+package iq.tx.v1beta1;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
@@ -9,38 +9,38 @@ import static io.grpc.MethodDescriptor.generateFullMethodName;
  */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 1.40.1)",
-    comments = "Source: terra/tx/v1beta1/service.proto")
+    comments = "Source: iq/tx/v1beta1/service.proto")
 @io.grpc.stub.annotations.GrpcGenerated
 public final class ServiceGrpc {
 
   private ServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "terra.tx.v1beta1.Service";
+  public static final String SERVICE_NAME = "iq.tx.v1beta1.Service";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<terra.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest,
-      terra.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse> getComputeTaxMethod;
+  private static volatile io.grpc.MethodDescriptor<iq.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest,
+      iq.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse> getComputeTaxMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "ComputeTax",
-      requestType = terra.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest.class,
-      responseType = terra.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse.class,
+      requestType = iq.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest.class,
+      responseType = iq.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest,
-      terra.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse> getComputeTaxMethod() {
-    io.grpc.MethodDescriptor<terra.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest, terra.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse> getComputeTaxMethod;
+  public static io.grpc.MethodDescriptor<iq.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest,
+      iq.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse> getComputeTaxMethod() {
+    io.grpc.MethodDescriptor<iq.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest, iq.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse> getComputeTaxMethod;
     if ((getComputeTaxMethod = ServiceGrpc.getComputeTaxMethod) == null) {
       synchronized (ServiceGrpc.class) {
         if ((getComputeTaxMethod = ServiceGrpc.getComputeTaxMethod) == null) {
           ServiceGrpc.getComputeTaxMethod = getComputeTaxMethod =
-              io.grpc.MethodDescriptor.<terra.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest, terra.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse>newBuilder()
+              io.grpc.MethodDescriptor.<iq.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest, iq.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ComputeTax"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest.getDefaultInstance()))
+                  iq.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse.getDefaultInstance()))
+                  iq.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse.getDefaultInstance()))
               .setSchemaDescriptor(new ServiceMethodDescriptorSupplier("ComputeTax"))
               .build();
         }
@@ -105,8 +105,8 @@ public final class ServiceGrpc {
      * EstimateFee simulates executing a transaction for estimating gas usage.
      * </pre>
      */
-    public void computeTax(terra.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest request,
-        io.grpc.stub.StreamObserver<terra.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse> responseObserver) {
+    public void computeTax(iq.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest request,
+        io.grpc.stub.StreamObserver<iq.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getComputeTaxMethod(), responseObserver);
     }
 
@@ -116,8 +116,8 @@ public final class ServiceGrpc {
             getComputeTaxMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest,
-                terra.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse>(
+                iq.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest,
+                iq.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse>(
                   this, METHODID_COMPUTE_TAX)))
           .build();
     }
@@ -145,8 +145,8 @@ public final class ServiceGrpc {
      * EstimateFee simulates executing a transaction for estimating gas usage.
      * </pre>
      */
-    public void computeTax(terra.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest request,
-        io.grpc.stub.StreamObserver<terra.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse> responseObserver) {
+    public void computeTax(iq.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest request,
+        io.grpc.stub.StreamObserver<iq.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getComputeTaxMethod(), getCallOptions()), request, responseObserver);
     }
@@ -174,7 +174,7 @@ public final class ServiceGrpc {
      * EstimateFee simulates executing a transaction for estimating gas usage.
      * </pre>
      */
-    public terra.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse computeTax(terra.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest request) {
+    public iq.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse computeTax(iq.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getComputeTaxMethod(), getCallOptions(), request);
     }
@@ -202,8 +202,8 @@ public final class ServiceGrpc {
      * EstimateFee simulates executing a transaction for estimating gas usage.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse> computeTax(
-        terra.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<iq.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse> computeTax(
+        iq.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getComputeTaxMethod(), getCallOptions()), request);
     }
@@ -229,8 +229,8 @@ public final class ServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_COMPUTE_TAX:
-          serviceImpl.computeTax((terra.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest) request,
-              (io.grpc.stub.StreamObserver<terra.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse>) responseObserver);
+          serviceImpl.computeTax((iq.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest) request,
+              (io.grpc.stub.StreamObserver<iq.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -254,7 +254,7 @@ public final class ServiceGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return terra.tx.v1beta1.ServiceOuterClass.getDescriptor();
+      return iq.tx.v1beta1.ServiceOuterClass.getDescriptor();
     }
 
     @java.lang.Override

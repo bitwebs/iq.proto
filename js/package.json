@@ -1,14 +1,14 @@
 {
-  "name": "@terra-money/terra.proto",
+  "name": "@iq-money/iq.proto",
   "version": "0.1.6",
-  "description": "JS and TS types relating to Protocol Buffers used by Terra project",
+  "description": "JS and TS types relating to Protocol Buffers used by Iq project",
   "contributors": [
     "Yun Yeo <YunSuk-Yeo@users.noreply.github.com>"
   ],
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/terra-money/terra.proto"
+    "url": "https://github.com/iq-money/iq.proto"
   },
   "publishConfig": {
     "access": "public"
@@ -17,7 +17,7 @@
     "confio/",
     "cosmos/",
     "cosmos_proto/",
-    "terra/",
+    "iq/",
     "gogoproto/",
     "google/",
     "ibc/",

@@ -1,4 +1,4 @@
-package terra.treasury.v1beta1;
+package iq.treasury.v1beta1;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
@@ -9,38 +9,38 @@ import static io.grpc.MethodDescriptor.generateFullMethodName;
  */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 1.40.1)",
-    comments = "Source: terra/treasury/v1beta1/query.proto")
+    comments = "Source: iq/treasury/v1beta1/query.proto")
 @io.grpc.stub.annotations.GrpcGenerated
 public final class QueryGrpc {
 
   private QueryGrpc() {}
 
-  public static final String SERVICE_NAME = "terra.treasury.v1beta1.Query";
+  public static final String SERVICE_NAME = "iq.treasury.v1beta1.Query";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest,
-      terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse> getTaxRateMethod;
+  private static volatile io.grpc.MethodDescriptor<iq.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest,
+      iq.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse> getTaxRateMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "TaxRate",
-      requestType = terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest.class,
-      responseType = terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse.class,
+      requestType = iq.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest.class,
+      responseType = iq.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest,
-      terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse> getTaxRateMethod() {
-    io.grpc.MethodDescriptor<terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest, terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse> getTaxRateMethod;
+  public static io.grpc.MethodDescriptor<iq.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest,
+      iq.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse> getTaxRateMethod() {
+    io.grpc.MethodDescriptor<iq.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest, iq.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse> getTaxRateMethod;
     if ((getTaxRateMethod = QueryGrpc.getTaxRateMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getTaxRateMethod = QueryGrpc.getTaxRateMethod) == null) {
           QueryGrpc.getTaxRateMethod = getTaxRateMethod =
-              io.grpc.MethodDescriptor.<terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest, terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse>newBuilder()
+              io.grpc.MethodDescriptor.<iq.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest, iq.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "TaxRate"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest.getDefaultInstance()))
+                  iq.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse.getDefaultInstance()))
+                  iq.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("TaxRate"))
               .build();
         }
@@ -49,29 +49,29 @@ public final class QueryGrpc {
     return getTaxRateMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest,
-      terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse> getTaxCapMethod;
+  private static volatile io.grpc.MethodDescriptor<iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest,
+      iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse> getTaxCapMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "TaxCap",
-      requestType = terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest.class,
-      responseType = terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse.class,
+      requestType = iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest.class,
+      responseType = iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest,
-      terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse> getTaxCapMethod() {
-    io.grpc.MethodDescriptor<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest, terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse> getTaxCapMethod;
+  public static io.grpc.MethodDescriptor<iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest,
+      iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse> getTaxCapMethod() {
+    io.grpc.MethodDescriptor<iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest, iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse> getTaxCapMethod;
     if ((getTaxCapMethod = QueryGrpc.getTaxCapMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getTaxCapMethod = QueryGrpc.getTaxCapMethod) == null) {
           QueryGrpc.getTaxCapMethod = getTaxCapMethod =
-              io.grpc.MethodDescriptor.<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest, terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse>newBuilder()
+              io.grpc.MethodDescriptor.<iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest, iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "TaxCap"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest.getDefaultInstance()))
+                  iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse.getDefaultInstance()))
+                  iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("TaxCap"))
               .build();
         }
@@ -80,29 +80,29 @@ public final class QueryGrpc {
     return getTaxCapMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest,
-      terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse> getTaxCapsMethod;
+  private static volatile io.grpc.MethodDescriptor<iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest,
+      iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse> getTaxCapsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "TaxCaps",
-      requestType = terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest.class,
-      responseType = terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse.class,
+      requestType = iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest.class,
+      responseType = iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest,
-      terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse> getTaxCapsMethod() {
-    io.grpc.MethodDescriptor<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest, terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse> getTaxCapsMethod;
+  public static io.grpc.MethodDescriptor<iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest,
+      iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse> getTaxCapsMethod() {
+    io.grpc.MethodDescriptor<iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest, iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse> getTaxCapsMethod;
     if ((getTaxCapsMethod = QueryGrpc.getTaxCapsMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getTaxCapsMethod = QueryGrpc.getTaxCapsMethod) == null) {
           QueryGrpc.getTaxCapsMethod = getTaxCapsMethod =
-              io.grpc.MethodDescriptor.<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest, terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse>newBuilder()
+              io.grpc.MethodDescriptor.<iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest, iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "TaxCaps"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest.getDefaultInstance()))
+                  iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse.getDefaultInstance()))
+                  iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("TaxCaps"))
               .build();
         }
@@ -111,29 +111,29 @@ public final class QueryGrpc {
     return getTaxCapsMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest,
-      terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse> getRewardWeightMethod;
+  private static volatile io.grpc.MethodDescriptor<iq.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest,
+      iq.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse> getRewardWeightMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "RewardWeight",
-      requestType = terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest.class,
-      responseType = terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse.class,
+      requestType = iq.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest.class,
+      responseType = iq.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest,
-      terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse> getRewardWeightMethod() {
-    io.grpc.MethodDescriptor<terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest, terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse> getRewardWeightMethod;
+  public static io.grpc.MethodDescriptor<iq.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest,
+      iq.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse> getRewardWeightMethod() {
+    io.grpc.MethodDescriptor<iq.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest, iq.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse> getRewardWeightMethod;
     if ((getRewardWeightMethod = QueryGrpc.getRewardWeightMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getRewardWeightMethod = QueryGrpc.getRewardWeightMethod) == null) {
           QueryGrpc.getRewardWeightMethod = getRewardWeightMethod =
-              io.grpc.MethodDescriptor.<terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest, terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse>newBuilder()
+              io.grpc.MethodDescriptor.<iq.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest, iq.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "RewardWeight"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest.getDefaultInstance()))
+                  iq.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse.getDefaultInstance()))
+                  iq.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("RewardWeight"))
               .build();
         }
@@ -142,29 +142,29 @@ public final class QueryGrpc {
     return getRewardWeightMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest,
-      terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse> getSeigniorageProceedsMethod;
+  private static volatile io.grpc.MethodDescriptor<iq.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest,
+      iq.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse> getSeigniorageProceedsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "SeigniorageProceeds",
-      requestType = terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest.class,
-      responseType = terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse.class,
+      requestType = iq.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest.class,
+      responseType = iq.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest,
-      terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse> getSeigniorageProceedsMethod() {
-    io.grpc.MethodDescriptor<terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest, terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse> getSeigniorageProceedsMethod;
+  public static io.grpc.MethodDescriptor<iq.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest,
+      iq.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse> getSeigniorageProceedsMethod() {
+    io.grpc.MethodDescriptor<iq.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest, iq.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse> getSeigniorageProceedsMethod;
     if ((getSeigniorageProceedsMethod = QueryGrpc.getSeigniorageProceedsMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getSeigniorageProceedsMethod = QueryGrpc.getSeigniorageProceedsMethod) == null) {
           QueryGrpc.getSeigniorageProceedsMethod = getSeigniorageProceedsMethod =
-              io.grpc.MethodDescriptor.<terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest, terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse>newBuilder()
+              io.grpc.MethodDescriptor.<iq.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest, iq.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "SeigniorageProceeds"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest.getDefaultInstance()))
+                  iq.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse.getDefaultInstance()))
+                  iq.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("SeigniorageProceeds"))
               .build();
         }
@@ -173,29 +173,29 @@ public final class QueryGrpc {
     return getSeigniorageProceedsMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest,
-      terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse> getTaxProceedsMethod;
+  private static volatile io.grpc.MethodDescriptor<iq.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest,
+      iq.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse> getTaxProceedsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "TaxProceeds",
-      requestType = terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest.class,
-      responseType = terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse.class,
+      requestType = iq.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest.class,
+      responseType = iq.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest,
-      terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse> getTaxProceedsMethod() {
-    io.grpc.MethodDescriptor<terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest, terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse> getTaxProceedsMethod;
+  public static io.grpc.MethodDescriptor<iq.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest,
+      iq.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse> getTaxProceedsMethod() {
+    io.grpc.MethodDescriptor<iq.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest, iq.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse> getTaxProceedsMethod;
     if ((getTaxProceedsMethod = QueryGrpc.getTaxProceedsMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getTaxProceedsMethod = QueryGrpc.getTaxProceedsMethod) == null) {
           QueryGrpc.getTaxProceedsMethod = getTaxProceedsMethod =
-              io.grpc.MethodDescriptor.<terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest, terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse>newBuilder()
+              io.grpc.MethodDescriptor.<iq.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest, iq.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "TaxProceeds"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest.getDefaultInstance()))
+                  iq.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse.getDefaultInstance()))
+                  iq.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("TaxProceeds"))
               .build();
         }
@@ -204,29 +204,29 @@ public final class QueryGrpc {
     return getTaxProceedsMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest,
-      terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse> getIndicatorsMethod;
+  private static volatile io.grpc.MethodDescriptor<iq.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest,
+      iq.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse> getIndicatorsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Indicators",
-      requestType = terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest.class,
-      responseType = terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse.class,
+      requestType = iq.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest.class,
+      responseType = iq.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest,
-      terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse> getIndicatorsMethod() {
-    io.grpc.MethodDescriptor<terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest, terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse> getIndicatorsMethod;
+  public static io.grpc.MethodDescriptor<iq.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest,
+      iq.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse> getIndicatorsMethod() {
+    io.grpc.MethodDescriptor<iq.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest, iq.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse> getIndicatorsMethod;
     if ((getIndicatorsMethod = QueryGrpc.getIndicatorsMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getIndicatorsMethod = QueryGrpc.getIndicatorsMethod) == null) {
           QueryGrpc.getIndicatorsMethod = getIndicatorsMethod =
-              io.grpc.MethodDescriptor.<terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest, terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse>newBuilder()
+              io.grpc.MethodDescriptor.<iq.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest, iq.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Indicators"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest.getDefaultInstance()))
+                  iq.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse.getDefaultInstance()))
+                  iq.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("Indicators"))
               .build();
         }
@@ -235,29 +235,29 @@ public final class QueryGrpc {
     return getIndicatorsMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.treasury.v1beta1.QueryOuterClass.QueryParamsRequest,
-      terra.treasury.v1beta1.QueryOuterClass.QueryParamsResponse> getParamsMethod;
+  private static volatile io.grpc.MethodDescriptor<iq.treasury.v1beta1.QueryOuterClass.QueryParamsRequest,
+      iq.treasury.v1beta1.QueryOuterClass.QueryParamsResponse> getParamsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Params",
-      requestType = terra.treasury.v1beta1.QueryOuterClass.QueryParamsRequest.class,
-      responseType = terra.treasury.v1beta1.QueryOuterClass.QueryParamsResponse.class,
+      requestType = iq.treasury.v1beta1.QueryOuterClass.QueryParamsRequest.class,
+      responseType = iq.treasury.v1beta1.QueryOuterClass.QueryParamsResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.treasury.v1beta1.QueryOuterClass.QueryParamsRequest,
-      terra.treasury.v1beta1.QueryOuterClass.QueryParamsResponse> getParamsMethod() {
-    io.grpc.MethodDescriptor<terra.treasury.v1beta1.QueryOuterClass.QueryParamsRequest, terra.treasury.v1beta1.QueryOuterClass.QueryParamsResponse> getParamsMethod;
+  public static io.grpc.MethodDescriptor<iq.treasury.v1beta1.QueryOuterClass.QueryParamsRequest,
+      iq.treasury.v1beta1.QueryOuterClass.QueryParamsResponse> getParamsMethod() {
+    io.grpc.MethodDescriptor<iq.treasury.v1beta1.QueryOuterClass.QueryParamsRequest, iq.treasury.v1beta1.QueryOuterClass.QueryParamsResponse> getParamsMethod;
     if ((getParamsMethod = QueryGrpc.getParamsMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getParamsMethod = QueryGrpc.getParamsMethod) == null) {
           QueryGrpc.getParamsMethod = getParamsMethod =
-              io.grpc.MethodDescriptor.<terra.treasury.v1beta1.QueryOuterClass.QueryParamsRequest, terra.treasury.v1beta1.QueryOuterClass.QueryParamsResponse>newBuilder()
+              io.grpc.MethodDescriptor.<iq.treasury.v1beta1.QueryOuterClass.QueryParamsRequest, iq.treasury.v1beta1.QueryOuterClass.QueryParamsResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Params"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.treasury.v1beta1.QueryOuterClass.QueryParamsRequest.getDefaultInstance()))
+                  iq.treasury.v1beta1.QueryOuterClass.QueryParamsRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.treasury.v1beta1.QueryOuterClass.QueryParamsResponse.getDefaultInstance()))
+                  iq.treasury.v1beta1.QueryOuterClass.QueryParamsResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("Params"))
               .build();
         }
@@ -322,8 +322,8 @@ public final class QueryGrpc {
      * TaxRate return the current tax rate
      * </pre>
      */
-    public void taxRate(terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest request,
-        io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse> responseObserver) {
+    public void taxRate(iq.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest request,
+        io.grpc.stub.StreamObserver<iq.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getTaxRateMethod(), responseObserver);
     }
 
@@ -332,8 +332,8 @@ public final class QueryGrpc {
      * TaxCap returns the tax cap of a denom
      * </pre>
      */
-    public void taxCap(terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest request,
-        io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse> responseObserver) {
+    public void taxCap(iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest request,
+        io.grpc.stub.StreamObserver<iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getTaxCapMethod(), responseObserver);
     }
 
@@ -342,8 +342,8 @@ public final class QueryGrpc {
      * TaxCaps returns the all tax caps
      * </pre>
      */
-    public void taxCaps(terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest request,
-        io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse> responseObserver) {
+    public void taxCaps(iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest request,
+        io.grpc.stub.StreamObserver<iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getTaxCapsMethod(), responseObserver);
     }
 
@@ -352,8 +352,8 @@ public final class QueryGrpc {
      * RewardWeight return the current reward weight
      * </pre>
      */
-    public void rewardWeight(terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest request,
-        io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse> responseObserver) {
+    public void rewardWeight(iq.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest request,
+        io.grpc.stub.StreamObserver<iq.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getRewardWeightMethod(), responseObserver);
     }
 
@@ -362,8 +362,8 @@ public final class QueryGrpc {
      * SeigniorageProceeds return the current seigniorage proceeds
      * </pre>
      */
-    public void seigniorageProceeds(terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest request,
-        io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse> responseObserver) {
+    public void seigniorageProceeds(iq.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest request,
+        io.grpc.stub.StreamObserver<iq.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getSeigniorageProceedsMethod(), responseObserver);
     }
 
@@ -372,8 +372,8 @@ public final class QueryGrpc {
      * TaxProceeds return the current tax proceeds
      * </pre>
      */
-    public void taxProceeds(terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest request,
-        io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse> responseObserver) {
+    public void taxProceeds(iq.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest request,
+        io.grpc.stub.StreamObserver<iq.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getTaxProceedsMethod(), responseObserver);
     }
 
@@ -382,8 +382,8 @@ public final class QueryGrpc {
      * Indicators return the current trl informations
      * </pre>
      */
-    public void indicators(terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest request,
-        io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse> responseObserver) {
+    public void indicators(iq.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest request,
+        io.grpc.stub.StreamObserver<iq.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getIndicatorsMethod(), responseObserver);
     }
 
@@ -392,8 +392,8 @@ public final class QueryGrpc {
      * Params queries all parameters.
      * </pre>
      */
-    public void params(terra.treasury.v1beta1.QueryOuterClass.QueryParamsRequest request,
-        io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryParamsResponse> responseObserver) {
+    public void params(iq.treasury.v1beta1.QueryOuterClass.QueryParamsRequest request,
+        io.grpc.stub.StreamObserver<iq.treasury.v1beta1.QueryOuterClass.QueryParamsResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getParamsMethod(), responseObserver);
     }
 
@@ -403,57 +403,57 @@ public final class QueryGrpc {
             getTaxRateMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest,
-                terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse>(
+                iq.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest,
+                iq.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse>(
                   this, METHODID_TAX_RATE)))
           .addMethod(
             getTaxCapMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest,
-                terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse>(
+                iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest,
+                iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse>(
                   this, METHODID_TAX_CAP)))
           .addMethod(
             getTaxCapsMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest,
-                terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse>(
+                iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest,
+                iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse>(
                   this, METHODID_TAX_CAPS)))
           .addMethod(
             getRewardWeightMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest,
-                terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse>(
+                iq.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest,
+                iq.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse>(
                   this, METHODID_REWARD_WEIGHT)))
           .addMethod(
             getSeigniorageProceedsMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest,
-                terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse>(
+                iq.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest,
+                iq.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse>(
                   this, METHODID_SEIGNIORAGE_PROCEEDS)))
           .addMethod(
             getTaxProceedsMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest,
-                terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse>(
+                iq.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest,
+                iq.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse>(
                   this, METHODID_TAX_PROCEEDS)))
           .addMethod(
             getIndicatorsMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest,
-                terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse>(
+                iq.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest,
+                iq.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse>(
                   this, METHODID_INDICATORS)))
           .addMethod(
             getParamsMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.treasury.v1beta1.QueryOuterClass.QueryParamsRequest,
-                terra.treasury.v1beta1.QueryOuterClass.QueryParamsResponse>(
+                iq.treasury.v1beta1.QueryOuterClass.QueryParamsRequest,
+                iq.treasury.v1beta1.QueryOuterClass.QueryParamsResponse>(
                   this, METHODID_PARAMS)))
           .build();
     }
@@ -481,8 +481,8 @@ public final class QueryGrpc {
      * TaxRate return the current tax rate
      * </pre>
      */
-    public void taxRate(terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest request,
-        io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse> responseObserver) {
+    public void taxRate(iq.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest request,
+        io.grpc.stub.StreamObserver<iq.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getTaxRateMethod(), getCallOptions()), request, responseObserver);
     }
@@ -492,8 +492,8 @@ public final class QueryGrpc {
      * TaxCap returns the tax cap of a denom
      * </pre>
      */
-    public void taxCap(terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest request,
-        io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse> responseObserver) {
+    public void taxCap(iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest request,
+        io.grpc.stub.StreamObserver<iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getTaxCapMethod(), getCallOptions()), request, responseObserver);
     }
@@ -503,8 +503,8 @@ public final class QueryGrpc {
      * TaxCaps returns the all tax caps
      * </pre>
      */
-    public void taxCaps(terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest request,
-        io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse> responseObserver) {
+    public void taxCaps(iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest request,
+        io.grpc.stub.StreamObserver<iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getTaxCapsMethod(), getCallOptions()), request, responseObserver);
     }
@@ -514,8 +514,8 @@ public final class QueryGrpc {
      * RewardWeight return the current reward weight
      * </pre>
      */
-    public void rewardWeight(terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest request,
-        io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse> responseObserver) {
+    public void rewardWeight(iq.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest request,
+        io.grpc.stub.StreamObserver<iq.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getRewardWeightMethod(), getCallOptions()), request, responseObserver);
     }
@@ -525,8 +525,8 @@ public final class QueryGrpc {
      * SeigniorageProceeds return the current seigniorage proceeds
      * </pre>
      */
-    public void seigniorageProceeds(terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest request,
-        io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse> responseObserver) {
+    public void seigniorageProceeds(iq.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest request,
+        io.grpc.stub.StreamObserver<iq.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getSeigniorageProceedsMethod(), getCallOptions()), request, responseObserver);
     }
@@ -536,8 +536,8 @@ public final class QueryGrpc {
      * TaxProceeds return the current tax proceeds
      * </pre>
      */
-    public void taxProceeds(terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest request,
-        io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse> responseObserver) {
+    public void taxProceeds(iq.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest request,
+        io.grpc.stub.StreamObserver<iq.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getTaxProceedsMethod(), getCallOptions()), request, responseObserver);
     }
@@ -547,8 +547,8 @@ public final class QueryGrpc {
      * Indicators return the current trl informations
      * </pre>
      */
-    public void indicators(terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest request,
-        io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse> responseObserver) {
+    public void indicators(iq.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest request,
+        io.grpc.stub.StreamObserver<iq.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getIndicatorsMethod(), getCallOptions()), request, responseObserver);
     }
@@ -558,8 +558,8 @@ public final class QueryGrpc {
      * Params queries all parameters.
      * </pre>
      */
-    public void params(terra.treasury.v1beta1.QueryOuterClass.QueryParamsRequest request,
-        io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryParamsResponse> responseObserver) {
+    public void params(iq.treasury.v1beta1.QueryOuterClass.QueryParamsRequest request,
+        io.grpc.stub.StreamObserver<iq.treasury.v1beta1.QueryOuterClass.QueryParamsResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getParamsMethod(), getCallOptions()), request, responseObserver);
     }
@@ -587,7 +587,7 @@ public final class QueryGrpc {
      * TaxRate return the current tax rate
      * </pre>
      */
-    public terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse taxRate(terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest request) {
+    public iq.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse taxRate(iq.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getTaxRateMethod(), getCallOptions(), request);
     }
@@ -597,7 +597,7 @@ public final class QueryGrpc {
      * TaxCap returns the tax cap of a denom
      * </pre>
      */
-    public terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse taxCap(terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest request) {
+    public iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse taxCap(iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getTaxCapMethod(), getCallOptions(), request);
     }
@@ -607,7 +607,7 @@ public final class QueryGrpc {
      * TaxCaps returns the all tax caps
      * </pre>
      */
-    public terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse taxCaps(terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest request) {
+    public iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse taxCaps(iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getTaxCapsMethod(), getCallOptions(), request);
     }
@@ -617,7 +617,7 @@ public final class QueryGrpc {
      * RewardWeight return the current reward weight
      * </pre>
      */
-    public terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse rewardWeight(terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest request) {
+    public iq.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse rewardWeight(iq.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getRewardWeightMethod(), getCallOptions(), request);
     }
@@ -627,7 +627,7 @@ public final class QueryGrpc {
      * SeigniorageProceeds return the current seigniorage proceeds
      * </pre>
      */
-    public terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse seigniorageProceeds(terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest request) {
+    public iq.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse seigniorageProceeds(iq.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getSeigniorageProceedsMethod(), getCallOptions(), request);
     }
@@ -637,7 +637,7 @@ public final class QueryGrpc {
      * TaxProceeds return the current tax proceeds
      * </pre>
      */
-    public terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse taxProceeds(terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest request) {
+    public iq.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse taxProceeds(iq.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getTaxProceedsMethod(), getCallOptions(), request);
     }
@@ -647,7 +647,7 @@ public final class QueryGrpc {
      * Indicators return the current trl informations
      * </pre>
      */
-    public terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse indicators(terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest request) {
+    public iq.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse indicators(iq.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getIndicatorsMethod(), getCallOptions(), request);
     }
@@ -657,7 +657,7 @@ public final class QueryGrpc {
      * Params queries all parameters.
      * </pre>
      */
-    public terra.treasury.v1beta1.QueryOuterClass.QueryParamsResponse params(terra.treasury.v1beta1.QueryOuterClass.QueryParamsRequest request) {
+    public iq.treasury.v1beta1.QueryOuterClass.QueryParamsResponse params(iq.treasury.v1beta1.QueryOuterClass.QueryParamsRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getParamsMethod(), getCallOptions(), request);
     }
@@ -685,8 +685,8 @@ public final class QueryGrpc {
      * TaxRate return the current tax rate
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse> taxRate(
-        terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<iq.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse> taxRate(
+        iq.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getTaxRateMethod(), getCallOptions()), request);
     }
@@ -696,8 +696,8 @@ public final class QueryGrpc {
      * TaxCap returns the tax cap of a denom
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse> taxCap(
-        terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse> taxCap(
+        iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getTaxCapMethod(), getCallOptions()), request);
     }
@@ -707,8 +707,8 @@ public final class QueryGrpc {
      * TaxCaps returns the all tax caps
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse> taxCaps(
-        terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse> taxCaps(
+        iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getTaxCapsMethod(), getCallOptions()), request);
     }
@@ -718,8 +718,8 @@ public final class QueryGrpc {
      * RewardWeight return the current reward weight
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse> rewardWeight(
-        terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<iq.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse> rewardWeight(
+        iq.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getRewardWeightMethod(), getCallOptions()), request);
     }
@@ -729,8 +729,8 @@ public final class QueryGrpc {
      * SeigniorageProceeds return the current seigniorage proceeds
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse> seigniorageProceeds(
-        terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<iq.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse> seigniorageProceeds(
+        iq.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getSeigniorageProceedsMethod(), getCallOptions()), request);
     }
@@ -740,8 +740,8 @@ public final class QueryGrpc {
      * TaxProceeds return the current tax proceeds
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse> taxProceeds(
-        terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<iq.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse> taxProceeds(
+        iq.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getTaxProceedsMethod(), getCallOptions()), request);
     }
@@ -751,8 +751,8 @@ public final class QueryGrpc {
      * Indicators return the current trl informations
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse> indicators(
-        terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<iq.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse> indicators(
+        iq.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getIndicatorsMethod(), getCallOptions()), request);
     }
@@ -762,8 +762,8 @@ public final class QueryGrpc {
      * Params queries all parameters.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.treasury.v1beta1.QueryOuterClass.QueryParamsResponse> params(
-        terra.treasury.v1beta1.QueryOuterClass.QueryParamsRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<iq.treasury.v1beta1.QueryOuterClass.QueryParamsResponse> params(
+        iq.treasury.v1beta1.QueryOuterClass.QueryParamsRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getParamsMethod(), getCallOptions()), request);
     }
@@ -796,36 +796,36 @@ public final class QueryGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_TAX_RATE:
-          serviceImpl.taxRate((terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest) request,
-              (io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse>) responseObserver);
+          serviceImpl.taxRate((iq.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest) request,
+              (io.grpc.stub.StreamObserver<iq.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse>) responseObserver);
           break;
         case METHODID_TAX_CAP:
-          serviceImpl.taxCap((terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest) request,
-              (io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse>) responseObserver);
+          serviceImpl.taxCap((iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest) request,
+              (io.grpc.stub.StreamObserver<iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse>) responseObserver);
           break;
         case METHODID_TAX_CAPS:
-          serviceImpl.taxCaps((terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest) request,
-              (io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse>) responseObserver);
+          serviceImpl.taxCaps((iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest) request,
+              (io.grpc.stub.StreamObserver<iq.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse>) responseObserver);
           break;
         case METHODID_REWARD_WEIGHT:
-          serviceImpl.rewardWeight((terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest) request,
-              (io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse>) responseObserver);
+          serviceImpl.rewardWeight((iq.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest) request,
+              (io.grpc.stub.StreamObserver<iq.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse>) responseObserver);
           break;
         case METHODID_SEIGNIORAGE_PROCEEDS:
-          serviceImpl.seigniorageProceeds((terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest) request,
-              (io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse>) responseObserver);
+          serviceImpl.seigniorageProceeds((iq.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest) request,
+              (io.grpc.stub.StreamObserver<iq.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse>) responseObserver);
           break;
         case METHODID_TAX_PROCEEDS:
-          serviceImpl.taxProceeds((terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest) request,
-              (io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse>) responseObserver);
+          serviceImpl.taxProceeds((iq.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest) request,
+              (io.grpc.stub.StreamObserver<iq.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse>) responseObserver);
           break;
         case METHODID_INDICATORS:
-          serviceImpl.indicators((terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest) request,
-              (io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse>) responseObserver);
+          serviceImpl.indicators((iq.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest) request,
+              (io.grpc.stub.StreamObserver<iq.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse>) responseObserver);
           break;
         case METHODID_PARAMS:
-          serviceImpl.params((terra.treasury.v1beta1.QueryOuterClass.QueryParamsRequest) request,
-              (io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryParamsResponse>) responseObserver);
+          serviceImpl.params((iq.treasury.v1beta1.QueryOuterClass.QueryParamsRequest) request,
+              (io.grpc.stub.StreamObserver<iq.treasury.v1beta1.QueryOuterClass.QueryParamsResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -849,7 +849,7 @@ public final class QueryGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return terra.treasury.v1beta1.QueryOuterClass.getDescriptor();
+      return iq.treasury.v1beta1.QueryOuterClass.getDescriptor();
     }
 
     @java.lang.Override
