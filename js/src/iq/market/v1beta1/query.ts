@@ -10,7 +10,7 @@ export const protobufPackage = "iq.market.v1beta1";
 
 /** QuerySwapRequest is the request type for the Query/Swap RPC method. */
 export interface QuerySwapRequest {
-  /** offer_coin defines the coin being offered (i.e. 1000000ubiq) */
+  /** offer_coin defines the coin being offered (i.e. 1000000uluna) */
   offerCoin: string;
   /** ask_denom defines the denom of the coin to swap to */
   askDenom: string;
